@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<title>Home</title>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: skyblue;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 57px;
+
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: skyblue;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgb(0, 0, 0);
+  color: black;
+}
+
+.topnav a.active {
+  background-color: rgb(14, 187, 255);
+  color: white;
+}
+
+
+
+.topnav .search-container {
+  float: right;
+  background-color: skyblue;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: rgb(255, 255, 255);
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: rgb(255, 255, 255);
+}
+.logo {
+    padding: 15rem;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+	background-image: url('images_website/SLAH.jpg');
+	background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.name {
+    border-style: solid; 
+    border-width: 10px; 
+    border-color: rgb(255, 255, 255) ;
+    padding:10px
+}
+li {
+  color:white
+}
+
+footer {
+	padding: 1rem;
+
+	background-color: blue;
+	box-sizing: border-box;
+}
+
+footer > div:nth-child(1) {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer > div > div h3 {
+	text-align: center;
+	margin: 0;
+}
+
+footer > div > div > ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+footer > div > div a {
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	transition: color 500ms;
+}
+
+footer > div > div p {
+	transition: color 500ms;
+}
+
+footer > div > div p:hover {
+	color:blue;
+}
+
+footer > div > div a:hover {
+	color: blue;
+}
+
+footer > div > :is(div:nth-child(1), div:nth-child(2)) {
+	border-right: 1px solid rgb(255, 255, 255);
+}
+
+footer > div > div {
+	text-align: center;
+}
+
+footer > div:nth-child(2) {
+	text-align: center;
+}
+
+footer > div > div:nth-child(1) p {
+	margin: 0;
+}
+.foot {
+  font-size: 15px;
+  color:white
+}
+.foots {
+  color:white
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+    
+  }
+  .topnav input[type=text] {
+    border: 1px solid skyblue;  
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="index.html">Home |</a>
+  <a class="active" href="Page2.html">History |</a>
+  <a class="active" href="Page3.html">Vision/Mission |</a>
+  <a class="active" href="Page4.html">Enrollment |</a>
+  <a class="active" href="Page5.html">Photos&Media |</a>
+  <a class="active" href="Page6.html">Gallery |</a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+
+
+<div class="logo"> 
+    <p class="name">Saint Louis School of Aurora Hill, Inc.<br>
+   Diocese of Baguio
+</p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div style="float:left; margin: 5px; margin-left: 10px;">
+   <h1> Study Areas</h1>
+
+   <div class="row">
+    <div class="column">
+      <img src="images_website/b850b204aa2627b3ee98224891da3f9f.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="images_website/DSC_0132.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="images_website/DSC_0545-1024x678.jpg" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="images_website/EE-Degree-300x199.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="images_website/Church.jpg" style="width:100%">
+      </div>
+
+      <div style="float:left; margin: 5px; margin-left: 10px;">
+        <h1> Courses Offered</h1>
+
+        <pre style="font-family:Arial, Helvetica, sans-serif; font-size: 20px;">
+          Choosing the right program can help you set your future goals and
+          visualize where you want to be. Whether you want to be a part of 
+          a Christian Life formation that helps you to be a good person
+          and join religious activities. Also, if you want to level up your
+          your profession, making yourself be informed with the right choices
+          will surely back you up in the future.
+       </pre>
+
+       <form action="/action_page.php" style="font-family:Arial, Helvetica, sans-serif; font-size: 10px;">
+        <label for="cars" style="font-family:Arial, Helvetica, sans-serif; font-size: 15px;"><b>List of Subjects:</b></label>
+        <select name="cars" id="cars">
+          <option value="volvo">Science</option>
+          <option value="saab">Mathematics</option>
+          <option value="opel">English</option>
+          <option value="audi">Filipino</option>
+          <option value="volvo">TLE</option>
+          <option value="saab">Arts</option>
+          <option value="opel">Araling Panlipunan</option>
+          <option value="audi">Physical Education</option>
+          <option value="volvo">Health</option>
+          <option value="saab">Edukasyon sa Pagpapakatao</option>
+          <option value="opel">Christian Life Formation</option>
+          <option value="audi">Computer</option>
+          <option value="audi">Music</option>
+        </select>
+        <br><br>
+      </form>
+
+      <h1> School Updates</h1>
+      <table style="width:100%">
+        <tr>
+          <td><img src="images_website/163743190_1511036282572307_4499655014106883515_n.jpg"><h5>Psychosocial and Spiritual Support <br>
+            Program for Faculty and Staff of SLSAH</h5></td>
+
+          <td><img src="images_website/152336862_1491418234534112_4242350839731561335_n.png"><h5>Registration for incoming Grade 7 <br>
+            students for S.Y. 21-22 </h5></td>
+          <td><img src="images_website/153407553_1491494571193145_6836755940125306334_n.jpg"><h5> WHY CHOOSE SAINT LOUIS SCHOOL OF<br>
+            AURORA HILL, INC.?</h5></td>
+          <td><img src="images_website/174277560_1530733080602627_2736307212667725873_n.jpg"><h5>Registration for incoming Grade 7 <br>
+            students for S.Y. 21-22, 2nd Batch </h5></td>
+        </tr>
+      </table>
+      </div>
+
+</div>
+<footer>
+  <div>
+      <div>
+          <h3 class="foots">Saint Louis Aurora Hill</h3>
+          <a>Ledesma St. Aurora Hill, Baguio City</a
+          ><br />
+          <a>+63 74 445 8107</a><br/>
+          <a>(074) 445-8107</a><br>
+          <a>saintlouisschoolaurorahill@gmail.com</a>
+      </div>
+      <div>
+          <h3 class="foots">Links</h3>
+          <ul>
+              <li>About</a></li>
+              <li>Contact Us</a></li>
+              <li>Faculty</a></li>
+          </ul>
+      </div>
+      <div>
+          <h3 class="foots">Connect with us:</h3>
+          <a>Facebook</a><br>
+          <a>Twitter</a><br>
+          <a>Instagram</a>
+      </div>
+  </div>
+  <div>
+      <p class="foot">Copyright © 2020-2021 Saint Louis Aurora Hill All Rights Reserved. </p>
+  </div>
+</footer>
+</body>
+</html>
